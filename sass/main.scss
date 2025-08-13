@@ -9,10 +9,15 @@ body {
   font-family: variables.$font-base;
   margin: 0;
   color: variables.$color-text;
+  background-image: url('../assets/img/FONDO.jpg');
+  background-size: cover;       // Ajusta para cubrir toda la pantalla
+  background-position: center;  // Centra la imagen
+  background-attachment: fixed; // Fondo fijo al hacer scroll
 }
 
 main {
   max-width: variables.$max-width;
   margin: 0 auto;
   padding: 0 variables.$space-m;
+
 }
