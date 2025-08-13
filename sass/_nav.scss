@@ -1,0 +1,28 @@
+@use 'variables';
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: variables.$space-s;
+  padding: variables.$space-m;
+  background-color: rgba(variables.$color-primary, 0.8);
+  backdrop-filter: blur(5px);
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: variables.$space-s variables.$space-m;
+    border-radius: variables.$radius;
+    background-color: variables.$color-secondary;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken(variables.$color-secondary, 10%);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}

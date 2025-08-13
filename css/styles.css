@@ -99,6 +99,30 @@
   text-decoration: underline;
 }
 
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: rgba(160, 199, 238, 0.8);
+  backdrop-filter: blur(5px);
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: #3498db;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+  transform: scale(1.05);
+}
+nav a:active {
+  transform: scale(0.95);
+}
+
 body {
   font-family: system-ui, sans-serif;
   margin: 0;
