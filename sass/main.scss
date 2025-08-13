@@ -1,0 +1,18 @@
+@use 'variables';
+@use 'info';
+@use 'perfil';
+@use 'skills';
+@use 'contacto';
+
+// Estilos globales
+body {
+  font-family: variables.$font-base;
+  margin: 0;
+  color: variables.$color-text;
+}
+
+main {
+  max-width: variables.$max-width;
+  margin: 0 auto;
+  padding: 0 variables.$space-m;
+}

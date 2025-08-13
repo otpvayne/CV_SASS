@@ -1,0 +1,21 @@
+@use 'variables' as v;
+
+#contacto {
+  padding: v.$space-l 0;
+  background-color: v.$color-primary;
+  color: white;
+  text-align: center;
+
+  p {
+    margin: v.$space-s 0;
+  }
+
+  a {
+    color: v.$color-secondary;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+

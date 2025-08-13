@@ -1,0 +1,42 @@
+@use 'variables' as v;
+
+#skills {
+  padding: v.$space-l 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: v.$space-m;
+    color: v.$color-primary;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: v.$space-m;
+    max-width: v.$max-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 768px) {
+    .skills-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  article {
+    background: v.$color-bg-light;
+    border: 1px solid v.$color-border;
+    border-radius: v.$radius;
+    padding: v.$space-m;
+
+    h3 {
+      color: v.$color-secondary;
+      margin-bottom: v.$space-s;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+  }
+}

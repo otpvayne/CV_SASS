@@ -1,0 +1,114 @@
+#info {
+  padding: 2rem 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+#info .avatar img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3498db;
+}
+#info h1 {
+  color: #2c3e50;
+  margin-top: 1rem;
+}
+#info .social {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+#info .social a {
+  color: #3498db;
+  text-decoration: none;
+}
+#info .social a:hover {
+  text-decoration: underline;
+}
+
+#perfil {
+  padding: 2rem 0;
+}
+#perfil h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#perfil .perfil-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: rgb(246.9309623431, 250.9058577406, 253.5690376569);
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: #333;
+}
+
+#skills {
+  padding: 2rem 0;
+}
+#skills h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+#skills .skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  #skills .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#skills article {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+#skills article h3 {
+  color: #3498db;
+  margin-bottom: 0.5rem;
+}
+#skills article ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+#contacto {
+  padding: 2rem 0;
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+}
+#contacto p {
+  margin: 0.5rem 0;
+}
+#contacto a {
+  color: #3498db;
+  text-decoration: none;
+}
+#contacto a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

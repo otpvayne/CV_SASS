@@ -1,0 +1,21 @@
+@use 'variables' as v;
+
+#perfil {
+  padding: v.$space-l 0;
+
+  h2 {
+    color: v.$color-primary;
+    margin-bottom: v.$space-m;
+    text-align: center;
+  }
+
+  .perfil-card {
+    max-width: v.$max-width;
+    margin: 0 auto;
+    background-color: lighten(v.$color-secondary, 45%);
+    border: 1px solid v.$color-border;
+    border-radius: v.$radius;
+    padding: v.$space-m;
+    color: v.$color-text;
+  }
+}

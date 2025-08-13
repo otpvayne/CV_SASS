@@ -1,0 +1,36 @@
+@use 'variables' as v;
+
+#info {
+  padding: v.$space-l 0;
+  background-color: v.$color-bg-light;
+  text-align: center;
+
+  .avatar img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid v.$color-secondary;
+  }
+
+  h1 {
+    color: v.$color-primary;
+    margin-top: v.$space-m;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    gap: v.$space-s;
+    list-style: none;
+    padding: 0;
+  }
+
+  .social a {
+    color: v.$color-secondary;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
