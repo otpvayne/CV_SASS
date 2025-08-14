@@ -1,0 +1,74 @@
+<!-- Declaramos que es un documento HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Ajuste para móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Futurista</title>
+    <!-- Conectamos el CSS -->
+    <link rel="stylesheet" href="/css/formu.css">
+</head>
+
+<body>
+
+    <h1>Registro Futurista</h1>
+
+    <!-- Creamos el formulario -->
+    <!-- novalidate desactiva la validación automática del navegador -->
+    <form id="miFormulario" novalidate>
+
+        <!-- Campo: Nombre -->
+        <label>Nombre completo *</label>
+        <input type="text" id="nombre" placeholder="Ej: Juan Pérez">
+        <small class="error" id="errorNombre"></small>
+
+        <!-- Campo: Email -->
+        <label>Correo electrónico *</label>
+        <input type="email" id="correo" placeholder="Ej: ejemplo@correo.com">
+        <small class="error" id="errorCorreo"></small>
+
+        <!-- Campo: Contraseña -->
+        <label>Contraseña *</label>
+        <input type="password" id="contrasena" placeholder="Mínimo 8 caracteres">
+        <small class="error" id="errorContrasena"></small>
+
+        <!-- Campo: Confirmar contraseña -->
+        <label>Confirmar contraseña *</label>
+        <input type="password" id="confirmar" placeholder="Repite la contraseña">
+        <small class="error" id="errorConfirmar"></small>
+
+        <!-- Campo: Fecha de nacimiento -->
+        <label>Fecha de nacimiento *</label>
+        <input type="date" id="fecha">
+        <small class="error" id="errorFecha"></small>
+
+        <!-- Campo: Celular -->
+        <label>Celular (Colombia) *</label>
+        <input type="tel" id="celular" placeholder="Ej: 3001234567">
+        <small class="error" id="errorCelular"></small>
+
+        <!-- Campo: Teléfono opcional -->
+        <label>Teléfono (opcional)</label>
+        <input type="tel" id="telefono" placeholder="Ej: 6011234567">
+        <small class="error" id="errorTelefono"></small>
+
+        <!-- Aceptar términos -->
+        <label>
+            <input type="checkbox" id="terminos"> Acepto los términos *
+        </label>
+        <small class="error" id="errorTerminos"></small>
+
+        <!-- Botón de enviar -->
+        <button type="submit">Enviar</button>
+
+        <!-- Contenedor para mensajes finales -->
+        <div id="mensajeFinal"></div>
+
+    </form>
+
+    <!-- Conectamos el JavaScript -->
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
