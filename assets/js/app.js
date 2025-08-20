@@ -76,8 +76,18 @@ document.addEventListener("DOMContentLoaded", function () {
             errorTerminos.textContent = "Debes aceptar los términos";
             valido = false;
         } else { errorTerminos.textContent = ""; }
+        let captchaResponse = grecaptcha.getResponse();
+    if (!captchaResponse) {
+        document.getElementById("errorCaptcha").textContent = "Por favor verifica el reCAPTCHA.";
+        return;
+    } else {
+        document.getElementById("errorCaptcha").textContent = "";
+    }
 
-        if (valido) {
+    // Aquí iría tu lógica de validación de campos y envío
+    document.getElementById("mensajeFinal").textContent = "Formulario enviado correctamente ✅";
+
+     if (valido) {
             mensajeFinal.textContent = "✅ Registro completado con éxito";
             mensajeFinal.className = "success";
             formulario.reset();

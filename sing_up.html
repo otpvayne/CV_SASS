@@ -59,6 +59,9 @@
             <input type="checkbox" id="terminos"> Acepto los términos *
         </label>
         <small class="error" id="errorTerminos"></small>
+        <!-- reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="6LcOZ6orAAAAAFoH5Xnc-UxRlvVS9aN7Bdx9Lxql"></div>
+        <small class="error" id="errorCaptcha"></small>
 
         <!-- Botón de enviar -->
         <button type="submit">Enviar</button>
@@ -69,6 +72,7 @@
     </form>
 
     <!-- Conectamos el JavaScript -->
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="/assets/js/app.js"></script>
 </body>
 </html>
